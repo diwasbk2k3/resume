@@ -1,0 +1,211 @@
+* {
+    background-color:black;
+}
+
+#name {
+    position: absolute;
+    height: 60px;
+    width: 300px;
+    padding: 20px;
+    padding-left: 30px;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    margin-top: 80px;
+    margin-left: 175px;
+    border-left: 50px;
+    border: solid;
+    border-bottom: 0px;
+    border-top: 0px;
+    border-radius: 40px;;
+    animation-name: nameAnimation;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes nameAnimation {
+    0%{
+        left: 100px;
+        border-color: red;
+        color:blanchedalmond;
+
+    }
+    50%{
+        border-color: yellow;
+        color:blanchedalmond;
+
+    }
+    100%{
+        border-color: red;
+        left: 680px;
+        color: gold;
+    }
+}
+
+#profile {
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    border: solid;
+    border-width: 7px;
+    border-color: rgb(23, 30, 57);
+    border-radius: 150px;
+    background: url("diwas.jpg");
+    background-size: cover;
+    margin-top: 50px;
+    margin-left: 110px;
+    animation-name: mainAnimation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+
+#intro{
+    position: absolute;
+    background-color:black;
+    color: white;
+    height:320px;
+    width: 310px;
+    border: solid;
+    border-width: 10px;
+    border-top: 0px;
+    border-bottom: 0px;
+    border-radius: 50px;
+    padding-left: 10px;
+    padding-top: 20px;
+    margin-top:250px ;
+    margin-left: 20px;
+    animation-name: mainAnimation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+h1{
+    color: white;
+    padding-left: 10px;
+}
+h2{
+    font-family: 'Courier New', Courier, monospace;
+}
+p{
+    font-family:'Times New Roman', Times, serif;
+    text-align:calc();
+}
+
+#skills{
+    position: absolute;
+    background-color:black;
+    height:320px;
+    width: 800px;
+    border: solid;
+    border-width: 10px;
+    border-radius: 50px;
+    padding-left: 10px;
+    padding-top: 20px;
+    margin-top:250px ;
+    margin-left: 400px;
+    
+}
+
+
+.skillbox {
+    height: 30px;
+    width: 120px;
+    color: white;
+    border: solid;
+    border-width: 3px;
+    border-radius: 50px;
+    text-align: center;
+    padding-top: 10px;
+    display: inline-block;
+    margin: 15px;
+    animation-name: skillAnimation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes mainAnimation {
+    from{
+        border-color: rgb(219, 143, 43);
+    }
+    to{
+        border-color: rgb(29, 100, 171);
+
+    }
+    
+}
+
+@keyframes skillAnimation {
+    0%{
+        border-color: rgb(29, 100, 171);
+        /* transform: rotate(360deg); */
+    }
+    25%{
+        border-color:rgb(144, 30, 30);
+    }
+    50%{
+        border-color: rgb(114, 44, 98);
+    }
+    100%{
+        border-color: rgb(67, 33, 112);
+
+    }
+    
+}
+
+#popularProjects{
+    position: absolute;
+    background-color:black;
+    height:500px;
+    width: 1200px;
+    border: solid;
+    border-width: 10px;
+    border-radius: 50px;
+    padding-left: 10px;
+    padding-top: 20px;
+    margin-top:650px ;
+    margin-left: 20px;
+    
+}
+.projects-list {
+    display: flex; /* Use flexbox to align items horizontally */
+    /* justify-content: space-around; Distribute items evenly along the main axis */
+}
+
+.projectbox {
+    height: 280px;
+    width: 240px;
+    color: white;
+    border: solid;
+    border-color:violet;
+    border-width: 5px;
+    border-radius: 20px;
+    text-align: center;
+    padding-top: 20px;
+    display: inline-block;
+    margin: 25px;
+    margin-top: 50px; 
+}
+
+.projectbox:hover {
+    background-color: #025bff;
+    border-color:#025bff ;
+}
+
+.projectbox:hover * {
+    background-color:#025bff;
+}
+
+a{
+    color: rgb(255, 238, 0);
+    text-decoration: none;
+}
+
+
+footer{
+    position: absolute;
+    margin-top: 1800px;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
